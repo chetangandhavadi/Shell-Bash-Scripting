@@ -7,3 +7,5 @@ git commit -m "$date" .
 
 echo "$pull"
 echo "$push"
+chmod +x $(ls)
+
