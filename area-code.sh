@@ -17,8 +17,6 @@ if [ ! -z "$(echo $1 | sed 's/[[:digit:]]//g')" ] ; then
  exit 1
 fi
 # Now, finally, let's look up the area code...
-result="$( curl -s -dump $source | grep "name=\"$1" | \
- sed 's/<[^>]*>//g;s/^ //g' | \
- cut -f2- -d\ | cut -f1 -d\( )"
+result="$( curl -s -dump $source | grep "name=\"$1" | \ sed 's/<[^>]*>//g;s/^ //g' | \ cut -f2- -d\ | cut -f1 -d\( )"
 echo "Area code $1 =$result"
 exit 0
