@@ -3,7 +3,7 @@
 # If the site is down user gets email notification stating that user's website is down
 if [ $# -ne 1 ]
 then
-MYSITE=www.chetnwebsite.com
+MYSITE=www.chetandesign.net
 else
 MYSITE=$1
 fi
