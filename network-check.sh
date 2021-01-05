@@ -8,6 +8,7 @@ else
 MYSITE=$1
 fi
 ping -c 3 $MYSITE > /dev/null
+echo "Website is up"
 if [ $? != 0 ]
 then
 echo `date +%F`
