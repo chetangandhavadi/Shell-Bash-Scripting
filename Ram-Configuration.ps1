@@ -1,3 +1,15 @@
+<# 
+.SYNOPSIS 
+Ram-Configuratio.ps1 - Displays the Ram Configuration
+ 
+.DESCRIPTION  
+Shows the p
+ 
+.OUTPUTS 
+Results are printed to the console. Future releases will support outputting to a log file.  
+ 
+
+#> 
 [Cmdletbinding()] 
 Param( 
     [string]$Computername = "localhost" 
